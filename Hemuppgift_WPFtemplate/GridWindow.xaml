@@ -1,0 +1,41 @@
+﻿<Window x:Class="Hemuppgift_WPFtemplate.GridWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Hemuppgift_WPFtemplate"
+        mc:Ignorable="d"
+        Title="GridWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        
+        <StackPanel Orientation="Horizontal" Grid.Row="0">
+            <TextBlock Width="25" Height="20" Text="Row" VerticalAlignment="Top"/>
+            <TextBox x:Name="RowBox" Width="45" Height="20" VerticalAlignment="Top"/>
+            <TextBlock Width="45" Height="20" Text="Column" VerticalAlignment="Top"/>
+            <TextBox x:Name="ColumnBox" Width="45" Height="20" VerticalAlignment="Top"/>
+            <Button x:Name="ApplyBtn" Content="Apply" Click="ApplyBtn_Click" Height="20" VerticalAlignment="Top" Width="70"/>
+        </StackPanel>
+        <Grid x:Name="GridPanel" Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                
+
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+
+            </Grid.RowDefinitions>
+            <!--<Button x:Name="GreenBox" Content="Rad, Column"  Grid.Column="0" Grid.Row="0"/>-->
+        </Grid>
+    </Grid>
+</Window>
