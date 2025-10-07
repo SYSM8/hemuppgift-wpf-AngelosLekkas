@@ -39,6 +39,8 @@ namespace Hemuppgift_WPFtemplate
                 Grid.SetColumn(greenBtn, column);
 
             GridPanel.Children.Add(greenBtn);
+            greenBtn.Content = ($"Row {row}, Column{column}");
+            greenBtn.Background = new SolidColorBrush(System.Windows.Media.Colors.LightGreen);
 
             
         }

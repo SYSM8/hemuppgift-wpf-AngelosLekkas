@@ -22,17 +22,20 @@ namespace Hemuppgift_WPFtemplate
 
         private void StackPanelBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            StackPanelWindow stackPanelWindow = new StackPanelWindow();
+            stackPanelWindow.Show();
         }
 
         private void WrapPanelBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            WrapPanelWindow wrapPanelWindow = new WrapPanelWindow();
+            wrapPanelWindow.Show();
         }
 
         private void DockPanelBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            DockPanelWindow dockPanelWindow = new DockPanelWindow();
+            dockPanelWindow.Show();
         }
     }
 }
